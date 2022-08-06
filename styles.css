@@ -1,0 +1,204 @@
+*{	
+	margin: 0 auto;
+	box-sizing: border-box;
+	font-family: arial;
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.pisca{
+	animation: piscando 0.5s infinite;
+}
+
+@keyframes piscando{
+	0%{opacity: 1;}
+	50%{opacity: 0.2;}
+	100%{opacity: 1;}
+}
+
+.urna{
+	width: 90%;
+	height: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #999;
+}
+
+.tela{
+	position: relative;
+	width: 65%;
+	height: 85%;
+	background-color: white;
+	margin-left: 40px;
+	margin-right: 20px;
+	border: 3px solid black;
+	padding: 30px;
+}
+
+.tela
+.titulo--1,
+.tela
+.titulo--2{
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.tela
+.titulo--2{
+	margin-top: 10%;
+	text-align: center;
+}
+
+.tela
+.digitos{
+	display: flex;
+	margin: 10px 0;
+}
+
+.tela
+.digitos
+div{
+	width: 40px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+	border: 3px solid black;
+	margin: 0 1px;
+}
+
+.tela
+.informacoes--do--voto
+p{
+	font-size: 19px;
+	margin: 10px 0;
+}
+
+.tela
+.avisos{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border-top: 3px solid;
+	width: 100%;
+	padding: 10px;
+}
+
+.tela
+.identificacao
+img{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 200px;
+	border: 2px solid black;
+	padding: 10px 0;
+}
+
+.tela
+.identificacao
+.pequena{
+	top: 200px;
+	height: 145px;
+}
+
+.tela
+.fim{
+	font-size: 200px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.controles{
+	width: 30%;
+	height: 85%;
+	background-color: #555;
+	margin-left: 20px;
+	margin-right: 40px;
+}
+
+.controles
+.contem--numeros{
+	width: 90%;
+}
+
+.controles
+.contem--numeros
+.numeros{
+	width: calc((100% / 3) - 10px);
+	margin: 10px 3px;
+	height: 60px;
+	display: inline-block;
+}
+
+.controles
+.contem--numeros
+.numeros:nth-of-type(10){
+	width: 100%;
+	margin-left: -2px;
+}
+
+.controles
+.numeros
+span{
+	max-width: 90px;
+	height: 100%;
+	background-color: black;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	box-shadow: 2px 3px 0px 3px #333;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.controles
+.opcoes{
+	width: 90%;
+	height: 100px;
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.controles
+.opcoes
+.button{
+	width: calc(100% / 3);
+	margin: 0 5px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 15px;
+	font-weight: bolder;
+	box-shadow: 2px 3px 0px 3px #333;
+	cursor: pointer;
+}
+
+.branco{
+	background-color: white;
+	color: black;
+}
+
+.corrigir{
+	background-color: orange;
+	color: white;
+}
+
+.confirmar{
+	background-color: green;
+	color: white;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Urna eletronica</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+	<div class="urna">
+		<div class="tela">
+			<p class="titulo--1">SEU VOTO VAI PARA</p>
+			<p class="titulo--2"></p>
+			<div class="digitos">
+				<span style="clear:both;"></span>
+			</div>
+			<div class="informacoes--do--voto"></div>
+			<div class="identificacao"></div>
+			<div class="avisos">
+				<p>Aperte a tecla:</p>
+				<p>CONFIRMAR para CONFIRMAR este voto</p>
+				<p>CORRIGIR para REINICIAR este voto</p>
+			</div>
+
+			<p class="fim pisca">FIM!</p>
+		</div>
+		<div class="controles">
+			<div class="contem--numeros">
+				<div class="numeros">
+					<span onclick="eventoClique(1)">1</span>
+				</div>
+				<div class="numeros">
+					<span onclick="eventoClique(2)">2</span>
+				</div>
+				<div class="numeros">
+					<span onclick="eventoClique(3)">3</span>
+				</div>
+				<div class="numeros">
+					<span onclick="eventoClique(4)">4</span>
+				</div>
+				<div class="numeros">
+					<span onclick="eventoClique(5)">5</span>
+				</div>
+				<div class="numeros">
+					<span onclick="eventoClique(6)">6</span>
+				</div>
+				<div class="numeros">
+					<span onclick="eventoClique(7)">7</span>
+				</div>
+				<div class="numeros">
+					<span onclick="eventoClique(8)">8</span>
+				</div>
+				<div class="numeros">
+					<span onclick="eventoClique(9)">9</span>
+				</div>
+				<div class="numeros">
+					<span onclick="eventoClique(0)">0</span>
+				</div>
+			</div>
+			<div class="opcoes">
+				<span class="button branco" onclick="branco()">BRANCO</span>
+				<span class="button corrigir" onclick="corrigir()">CORRIGIR</span>
+				<span class="button confirmar" onclick="confirmar()">CONFIRMAR</span>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="dados.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
