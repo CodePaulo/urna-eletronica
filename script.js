@@ -12,6 +12,26 @@ audioFim.src = "som-urna-eletronica-brasileira.mp3"
 let etapa = 0
 let armazenandoDigitos = []
 
+document.addEventListener('keydown', e => {
+	if(/[0-9]/.test(e.key))
+		eventoClique(e.key)
+
+	if(e.key === 'Enter')
+		confirmar()
+
+	if(e.key === 'Delete' || e.key === 'Backspace')
+		corrigir()
+
+	if(e.key.toUpperCase() === 'B')
+		branco()
+	
+	if(e.key === 'Home'){
+		armazenandoDigitos = []
+		etapa = 0
+		iniciandoUrna()
+	}
+})
+
 function iniciandoUrna(){
 	let caixas = ''
 
